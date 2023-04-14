@@ -1,0 +1,54 @@
+#about {
+    background-color:$content-bg-color;
+    padding-top: $section-padding;
+    padding-bottom: 7.5rem;
+    .container {
+        @extend %center-div;
+        flex-direction: column;
+        height: 100%;
+         h2 {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            @media only screen and (max-width: $tablet-breakpoint) {
+              font-size: 1.5rem!important;
+            }
+          }
+        .col
+         p {
+            font-size: 1.25rem;
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 2.5rem;
+            a {
+                color: #1d809f;
+                text-decoration: underline;
+            }
+            
+            @media only screen and (max-width: $tablet-breakpoint) {
+              font-size: 1rem;
+              line-height: 1.2;
+            }
+        }
+        .btn-div{
+            @extend %center-div;
+            a {
+                background-color: #343a40;
+                color: #fff;
+                border-radius: 0.25rem;
+                padding: 1rem 2rem;
+                font-size: 1.25rem;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    background-color: #212529;
+                }
+                
+                @media only screen and (max-width:$tablet-breakpoint) {
+                  padding: 0.75rem 1.5rem;
+                }
+            }
+        }
+    }
+  }
+  

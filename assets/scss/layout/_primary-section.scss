@@ -1,0 +1,71 @@
+#services{
+    background-color:$services-bg-color;
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    width: 100%;
+    .container{
+        @extend %center-div;
+        flex-direction: column;
+        height: 100%;
+        h3{
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #a18420;
+        }
+        h2{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: $navbar-bg-color;
+            @media only screen and (max-width: $tablet-breakpoint) {
+                font-size: 2rem!important;
+            }
+        }
+        .row{
+            .card{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.2rem;
+                margin-right: 1.7rem!important;
+                @media only screen and (max-width: $tablet-breakpoint) {
+                    padding-right: 3rem!important;
+                    padding-left: 3rem!important;
+                    .col-3{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+                h4{
+                    font-size: 1.5rem;
+                    color: $navbar-bg-color;
+                    @media only screen and (max-width: $large-desktop-breakpoint) {
+                        font-size: 2rem!important;
+                    }
+                }
+                .text-faded {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                .service-icon {
+                    @extend %center-div;
+                    background-color: #fff;
+                    color: #1D809F;
+                    height: 7rem;
+                    width: 7rem;
+                    border-radius: 50%;
+                    margin-bottom: 1rem;
+                    display: block;
+                    line-height: 7.5rem;
+                    font-size: 2.25rem;
+                    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+                    i{
+                        margin-left: 25%;
+                    }
+                }
+                .col-3{
+                    margin-right: 100px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.callout {
+    padding: 15rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../media/bg-callout.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+        h2{
+           font-size: 3.5rem;
+           font-weight: 700;
+           display: block;
+           max-width: 30rem;
+           text-align: center;
+           margin-bottom: 3rem;
+           margin-left: auto;
+           margin-right: auto;
+        }
+        .callout-btn{
+            display: flex;
+            justify-content: center;
+            .btn-xl {
+                padding: 1.45rem 2.4rem;
+                @extend %center-div;
+                width: 200px;
+                height: 80px;
+                background-color: rgb(29,128,159);
+                border-radius: 10px;
+                color: $navbar-bg-color;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(29, 169, 159);
+                }
+            }
+        }
+    }
+}

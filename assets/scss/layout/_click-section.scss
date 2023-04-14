@@ -1,0 +1,54 @@
+.click-section{
+    background-color: $services-bg-color;
+    padding:$section-padding 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        padding-right: 3rem !important;
+       padding-left: 3rem !important;
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       h2{
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: $navbar-bg-color;
+        @media only screen and (min-width: $large-desktop-breakpoint) {
+            font-size: 2rem!important;
+        }
+       }
+       .click-button-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .btn-light{
+            width: 170px;
+            height: 30px;
+            border-radius: 6px;
+            padding: 1.45rem 2.3rem;
+            text-align: center;
+            margin-right: 1rem;
+            background-color: rgb(248,249,250);
+            color: $navbar-brand-color;
+            &:hover{
+                background-color:rgb(226,227,228);
+            }
+        }
+        .btn-dark{
+            width: 170px;
+            height: 30px;
+            border-radius: 10px;
+            padding: 1.45rem 2.5rem;
+            margin-right: 1rem;
+            background-color: rgb(33,37,41);
+            color: $navbar-bg-color;
+            &:hover{
+               background-color: rgb(77,81,84);
+            }
+        }
+       }
+    }
+}

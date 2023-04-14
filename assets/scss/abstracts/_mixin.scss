@@ -1,0 +1,34 @@
+@mixin for-phone {
+    @media (max-width: $phone-breakpoint) { @content; }
+  }
+  @mixin for-tablet {
+    @media (max-width: $tablet-breakpoint) and (min-width: $phone-breakpoint) { @content; }
+  }
+  @mixin for-laptop {
+    @media (max-width: $desktop-breakpoint) and (min-width: $tablet-breakpoint) { @content; }
+  }
+  @mixin for-large-desktop {
+    @media (max-width: size.$large-desktop-breakpoint) and (min-width:$desktop-breakpoint) { @content; }
+  }
+  @mixin for-xxl-large-desktop {
+    @media (min-width: $xxl-large-desktop-breakpoint) { @content; }
+  }
+
+  @mixin navbar-padding {
+    padding-top: $navbar-padding-y;
+    padding-bottom: $navbar-padding-y;
+    padding-left: $navbar-padding-x;
+    padding-right: $navbar-padding-x;
+  }
+  
+  @mixin navbar-toggler-padding {
+    padding-top: $navbar-toggler-padding-y;
+    padding-bottom: $navbar-toggler-padding-y;
+    padding-left: $navbar-toggler-padding-x;
+    padding-right: $navbar-toggler-padding-x;
+  }
+  
+  @mixin navbar-nav-link-padding {
+    padding-left: $navbar-nav-link-padding-x;
+    padding-right: $navbar-nav-link-padding-x;
+  }
